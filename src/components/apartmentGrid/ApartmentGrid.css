@@ -1,0 +1,43 @@
+.apartment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 40px;
+}
+
+.apartment-grid img {
+  width: 100%;
+  min-height: 360px;
+  border-radius: 10px;
+  object-fit: cover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.apartment-item {
+  position: relative;
+  display: inline-block;
+}
+
+.image-overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  color: var(--white);
+  font-weight: 900;
+}
+
+@media (width<=780px) {
+  .apartment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width<=640px) {
+  .apartment-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,31 @@
+.banner {
+  display: grid;
+  place-items: center;
+  height: 223px;
+  border-radius: 25px;
+  background: url('../../assets/backgroundFilter.png') no-repeat,
+    url('../../assets/banner.png') no-repeat;
+  background-size: cover;
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner h1 {
+    margin-left: 30px;
+  }
+}

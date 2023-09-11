@@ -1,0 +1,20 @@
+.about-container img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.about-text {
+  color: var(--redKasa);
+}
+
+@media (width<=768px) {
+  .about-container img {
+    min-height: 223px;
+  }
+}

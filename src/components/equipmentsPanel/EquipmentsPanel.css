@@ -1,0 +1,70 @@
+.equipments-panel {
+  margin-top: 20px;
+  min-width: 650px;
+}
+
+.equipments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  width: 100%;
+  height: 52px;
+  background-color: var(--redKasa);
+  color: var(--white);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.equipments-icon {
+  cursor: pointer;
+}
+
+.equipments-content {
+  padding: 20px;
+  min-height: 90%;
+  background-color: var(--whiteBg);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  opacity: 1;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  font-size: 18px;
+}
+
+.equipments-content-off {
+  color: transparent;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.equipments-list li {
+  list-style: none;
+}
+
+@media (width<= 1400px) {
+  .equipments-panel {
+    min-width: 400px;
+  }
+}
+
+@media (width<= 900px) {
+  .equipments-panel {
+    min-width: 350px;
+  }
+}
+
+@media (width<= 768px) {
+  .equipments-panel {
+    min-width: 300px;
+  }
+}
