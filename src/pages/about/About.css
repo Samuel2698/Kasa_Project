@@ -10,6 +10,7 @@
 }
 
 .about-text {
+  margin: 0px 50px 0 50px;
   color: var(--redKasa);
 }
 
