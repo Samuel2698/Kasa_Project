@@ -31,8 +31,8 @@ export function EquipmentsPanel({ equipments }) {
       </p>
       <div className={showEquipmentsStyles()}>
         {equipments.map((equipment, index) => (
-          <ul className="equipments-list">
-            <li key={index}>{equipment}</li>
+          <ul key={index} className="equipments-list">
+            <li>{equipment}</li>
           </ul>
         ))}
       </div>
